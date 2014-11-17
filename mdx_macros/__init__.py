@@ -103,5 +103,5 @@ class MacroBlockParser(markdown.blockprocessors.BlockProcessor):
                 elem.text = block
                 logging.error("Invalid macro: %s" % macro_name)
         
-def makeExtension(config=[]):
+def makeExtension(**config):
     return MacroExtension(config)
